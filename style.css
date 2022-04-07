@@ -1,0 +1,806 @@
+@charset 'UTF-8';
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+    font-size: 100%;
+}
+@media screen and (max-width: 1980px) {  
+    .kamakura-page {
+        background-color: rgb(44, 28, 24);
+        
+        background-repeat: no-repeat;
+        margin-top: 0%;
+        padding: 0%;
+    }
+        .url {
+            filter: brightness(100%) saturate(150%);
+        }
+        header {
+            display: flex;
+            width: 100%;
+            height: 100px;
+            top: 0;
+            margin: 0%;
+            background-color:rgba(86, 82, 105, 0.808);
+            color: rgba(0, 0, 0, 0.808);
+            /*opacity:0.4;*/
+            align-items: center;
+        }
+
+        .title {
+            position: relative;
+            top: 10px;
+            height: 100px;
+            margin-right: auto;
+        }
+        
+        
+        #nav {
+            
+            list-style: none;
+            display: flex;
+
+        }
+        #nav li {
+            margin-left: 40px;
+        }
+        #nav li a {
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+            color: #ddd;
+            font-size: 15px;
+            display: inline-block;
+            line-height:normal;
+        }
+        
+        #nav li a:hover {
+            color: crimson;
+        }
+
+
+        .img {
+            background-image: url(img/kamakura_hatiman3.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: right bottom;
+            width: 100%;
+            height: 120vh;
+            overflow:hidden;
+        }
+        .img ::before {
+            content: '';
+            display: block;
+            padding-top: 50%;
+        }
+
+        .img p {
+            font-size: 100px;
+            font-family: 'IM Fell DW Pica SC', serif;
+            position: absolute;
+            top: 45%;
+            left: 55%;
+            -ms-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            text-shadow: 1px 2px 3px #808080;
+        }
+
+        .box {
+            opacity: 0;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 30px;
+            color: black;
+            background-color: aliceblue;
+            width: 800px;
+            margin: 2px;
+            padding: 5px;
+            
+        }
+
+
+        .box1-title p {
+            font-family: 'ヒラギノ明朝Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
+            padding: 1rem 1rem;
+            color: black;
+            background: #000;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .box1-title p span {
+            background-image: -webkit-linear-gradient(315deg, #b8751e 0%, #ffce08 37%, #fefeb2 47%, #fafad6 50%, #fefeb2 53%, #e1ce08 63%, #b8751e 100%);
+            background-image: linear-gradient(135deg, #b8751e 0%, #ffce08 37%, #fefeb2 47%, #fafad6 50%, #fefeb2 53%, #e1ce08 63%, #b8751e 100%);
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+        }
+        .box1 p {
+            font-size: 21px;
+            font-family: "ヒラギノ明朝 ProN","Hiragino Mincho ProN",Arial,serif; 
+            font-weight: 900;
+        }
+        .box1 p span {
+            color: red;
+        }
+        .hatakeyama1 {
+            width: 150px;
+            height: 250px;
+            z-index: -1;
+            position: absolute;
+            top: 100px;
+            left: 0px;
+        }
+        ul {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 5px;
+        }
+        .fadeUp {
+            animation-name: fadeUpAnime;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeUpAnime {
+            from {
+                opacity: 0;
+                transform: translate(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+        .main {
+            background-color: black;
+        }
+
+        .box2-title p {
+            font-family: 'ヒラギノ明朝Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
+            padding: 1rem 1rem;
+            color: black;
+            background: #000;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .box2-title p span {
+            background-image: -webkit-linear-gradient(315deg, #b8751e 0%, #ffce08 37%, #fefeb2 47%, #fafad6 50%, #fefeb2 53%, #e1ce08 63%, #b8751e 100%);
+            background-image: linear-gradient(135deg, #b8751e 0%, #ffce08 37%, #fefeb2 47%, #fafad6 50%, #fefeb2 53%, #e1ce08 63%, #b8751e 100%);
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+        }
+        .box2 p {
+            font-size: 20px;
+            font-family: "ヒラギノ明朝 ProN","Hiragino Mincho ProN",Arial,serif; 
+            font-weight: 900;
+        }
+        .btn,
+        a.btn,
+        button.btn {
+        font-size: 1.6rem;
+        font-weight: 700;
+        width: 100%;
+        line-height: 1.5;
+        position: relative;
+        display: inline-block;
+        padding: 1rem 4rem;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        text-align: center;
+        vertical-align: middle;
+        text-decoration: none;
+        letter-spacing: 0.1em;
+        color: #212529;
+        border-radius: 0.5rem;
+        }
+
+        a.box3-btn {
+        font-weight: normal;
+            font-family: 'ヒラギノ明朝';
+        color: #fff;
+        border-radius: 0;
+        background-image: -webkit-gradient(
+            linear,
+            left top,
+            right top,
+            color-stop(40%, #ff3cac),
+            to(#562b7c)
+        );
+        background-image: -webkit-linear-gradient(left, #ff3cac 40%, #562b7c 100%);
+        background-image: linear-gradient(90deg, #ff3cac 40%, #562b7c 100%);
+        }
+
+        a.box3-btn:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        content: "";
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+
+        background-image: -webkit-gradient(
+            linear,
+            left top,
+            right top,
+            from(#ff3cac),
+            color-stop(#562b7c),
+            to(#2b86c5)
+        );
+
+        background-image: -webkit-linear-gradient(left, #ff3cac, #562b7c, #2b86c5);
+
+        background-image: linear-gradient(90deg, #ff3cac, #562b7c, #2b86c5);
+        }
+
+        a.box3-btn span {
+        position: relative;
+        z-index: 1;
+        }
+
+        a.box3-btn:hover {
+        color: #fff;
+        }
+
+        a.btn-gradient:hover:after {
+        opacity: 0;
+        }
+        .box4 {
+            width: 400px;
+            height: 600px;
+            margin-left: auto;
+            color: black;
+            background-color: aliceblue;
+            font-size: 20px;
+            margin: 15px;
+            padding: 5px;
+            display: block;
+            line-height: 30px;
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+
+        }
+        .box4-title h1 {
+            font-family: 'ヒラギノ明朝Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
+            padding: 1rem 1rem;
+            color: black;
+            background: #000;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .box4-title h1 span {
+            background-image: -webkit-linear-gradient(315deg, #b8751e 0%, #ffce08 37%, #fefeb2 47%, #fafad6 50%, #fefeb2 53%, #e1ce08 63%, #b8751e 100%);
+            background-image: linear-gradient(135deg, #b8751e 0%, #ffce08 37%, #fefeb2 47%, #fafad6 50%, #fefeb2 53%, #e1ce08 63%, #b8751e 100%);
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+        }
+
+        .box4 p {
+            font-size:  23px;
+            font-family: "ヒラギノ明朝 ProN","Hiragino Mincho ProN",Arial,serif; 
+            font-weight: 900;
+        }
+        .box4 h2 {
+            position: relative;
+            top: 60px;
+            font-size: 23px;
+            font-family: "ヒラギノ明朝 ProN","Hiragino Mincho ProN",Arial,serif; 
+            font-weight: 900;
+        }
+        article {
+            display: flex;
+        }
+
+        #page_top{
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            background: #3f98ef;
+            opacity: 0.6;
+            border-radius: 50%;
+        }
+        #page_top a {
+            position: relative;
+            display: block;
+            width: 50px;
+            height: 50px;
+            text-decoration: none;
+        }
+        #page_top a::before{
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            content: '\f102';
+            font-size: 25px;
+            color: #fff;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: -5px;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            text-align: center;
+        }
+
+
+
+
+        #footer {
+            border-top: solid 1px white (100, 78, 78);
+            padding-bottom: 10px;
+            background-color: black;
+        }
+        #footer p {
+            color: white;
+            text-align: center;
+        }
+    }
+/*
+@media screen and (max-width: 480px){ 
+    .kamakura-page {
+        background-color: rgb(44, 28, 24);
+        
+        background-repeat: no-repeat;
+        margin-top: 0%;
+        padding: 0%;
+        
+    }
+    .url {
+        filter: brightness(100%) saturate(150%);
+    }
+    header {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        top: 0;
+        margin: 0%;
+        background-color:rgba(86, 82, 105, 0.808);
+        color: rgba(0, 0, 0, 0.808);
+        align-items: center;
+    }
+    
+    .title {
+        position: relative;
+        top: 10px;
+        height: 100px;
+        margin-right: auto;
+    }
+    .humburger {
+        position: relative;
+        top: 25px;
+        left: 25px;
+        margin-left: 40px;
+    }
+    .humburger-box {
+        position: relative;
+        width: 25px;
+        height: 32px;
+        cursor: pointer;
+        padding-right: 20px;
+    }
+    .humburger-box > span {
+        width: 100%;
+        height: 1px;
+        left: 0;
+        display: block;
+        background: white;
+        position: absolute;
+        transition: transform .6s ease-in-out .5s ease;
+    }
+    .humburger-box > span:nth-child(1){
+        top: 0;
+    }
+    .humburger-box > span:nth-child(2){
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .humburger-box > span:nth-child(3){
+        bottom: 0;
+    }
+    .is-open .humburger-box > span {
+        background: #fff;
+    }
+    .is-open .humburger-box > span:nth-child(1) {
+        top: 50%;
+        transform: rotate(45deg) translateY(-50%);
+    }
+    .is-open .humburger-box > span:nth-child(2) {
+        width: 0%;
+    }
+    .is-open .humburger-box > span:nth-child(3) {
+        top: 50%;
+        transform: rotate(-45deg) translateY(-50%);
+    }
+    .humburger {
+        z-index: 100;
+    }
+    }
+    #nav-content {
+        z-index: 90;
+        overflow: auto;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        color: #fff;
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        opacity: 0;
+        transition: opacity .6s ease, visibility .6s ease;
+    }
+    #nav-content ul {
+      list-style: none;
+    }
+    #nav-content a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 30px 0;
+      transition: opacity .6s ease;
+      pointer-events: none;
+    }
+    #nav-content a:hover {
+      opacity: 0.6;
+    }
+    
+    .is-open {
+        overflow: hidden;
+    }
+    .is-open #nav-content {
+      z-index: 99;
+      visibility: visible;
+      opacity: 1;
+    }
+    .is-open #nav-content a {
+      pointer-events: auto;
+    }
+    article {
+        z-index: 95;
+    }
+    /*
+    #nav {
+        
+        list-style: none;
+        display: flex;
+    
+    }
+    #nav li {
+        margin-left: 40px;
+    }
+    #nav li a {
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+        color: #ddd;
+        font-size: 15px;
+        display: inline-block;
+        line-height:normal;
+    }
+    
+    #nav li a:hover {
+        color: crimson;
+    }
+    */
+    /*  
+    .img {
+        background-image: url(img/kamakura_hatiman3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .img ::before {
+        content: '';
+        display: block;
+        padding-top: 50%;
+    }
+    .img p {
+        font-size: 4.5rem;
+        font-family: 'IM Fell DW Pica SC', serif;
+        position: absolute;
+        top: 45%;
+        left: 55%;
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0;
+        text-shadow: 1px 2px 3px #808080;
+    }
+    
+    
+    .box {
+        opacity: 0;
+        box-sizing: border-box;
+        text-align: center;
+        line-height: 30px;
+        color: black;
+        background-color: aliceblue;
+        width: 21rem;
+        margin: 10px;
+        padding: 1px;
+    }
+    
+    .box1-title p {
+        font-family: 'ヒラギノ明朝Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
+        padding: 1rem 1rem;
+        color: black;
+        background: #000;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .box1-title p span {
+        background-image: -webkit-linear-gradient(315deg, #b8751e 0%, #ffce08 37%, #fefeb2 47%, #fafad6 50%, #fefeb2 53%, #e1ce08 63%, #b8751e 100%);
+        background-image: linear-gradient(135deg, #b8751e 0%, #ffce08 37%, #fefeb2 47%, #fafad6 50%, #fefeb2 53%, #e1ce08 63%, #b8751e 100%);
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+      }
+    .box1 p {
+        font-size: 21px;
+        font-family: "ヒラギノ明朝 ProN","Hiragino Mincho ProN",Arial,serif; 
+        font-weight: 900;
+    }
+    .box1 p span {
+        color: red;
+    }
+    .hatakeyama1 {
+        width: 150px;
+        height: 250px;
+        z-index: -1;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+    }
+    ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 5px;
+    }
+    .fadeUp {
+        animation-name: fadeUpAnime;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+    
+    @keyframes fadeUpAnime {
+        from {
+            opacity: 0;
+            transform: translate(100px);
+        }
+        to {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+    .main {
+        background-color: black;
+        z-index: 97;
+    }
+    
+    .box2-title p {
+        font-family: 'ヒラギノ明朝Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
+        padding: 1rem 1rem;
+        color: black;
+        background: #000;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .box2-title p span {
+        background-image: -webkit-linear-gradient(315deg, #b8751e 0%, #ffce08 37%, #fefeb2 47%, #fafad6 50%, #fefeb2 53%, #e1ce08 63%, #b8751e 100%);
+        background-image: linear-gradient(135deg, #b8751e 0%, #ffce08 37%, #fefeb2 47%, #fafad6 50%, #fefeb2 53%, #e1ce08 63%, #b8751e 100%);
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+      }
+    .box2 p {
+        font-size: 21px;
+        font-family: "ヒラギノ明朝 ProN","Hiragino Mincho ProN",Arial,serif; 
+        font-weight: 900;
+    }
+    .btn,
+    a.btn,
+    button.btn {
+      font-size: 1.6rem;
+      font-weight: 700;
+      width: 100%;
+      line-height: 1.5;
+      position: relative;
+      display: inline-block;
+      padding: 1rem 4rem;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      text-align: center;
+      vertical-align: middle;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      color: #212529;
+      border-radius: 0.5rem;
+    }
+    
+    a.box3-btn {
+      font-weight: normal;
+        font-family: 'ヒラギノ明朝';
+      color: #fff;
+      border-radius: 0;
+      background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(40%, #ff3cac),
+        to(#562b7c)
+      );
+      background-image: -webkit-linear-gradient(left, #ff3cac 40%, #562b7c 100%);
+      background-image: linear-gradient(90deg, #ff3cac 40%, #562b7c 100%);
+    }
+    
+    a.box3-btn:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+    
+      width: 100%;
+      height: 100%;
+    
+      content: "";
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+    
+      background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#ff3cac),
+        color-stop(#562b7c),
+        to(#2b86c5)
+      );
+    
+      background-image: -webkit-linear-gradient(left, #ff3cac, #562b7c, #2b86c5);
+    
+      background-image: linear-gradient(90deg, #ff3cac, #562b7c, #2b86c5);
+    }
+    
+    a.box3-btn span {
+      position: relative;
+      z-index: 1;
+    }
+    
+    a.box3-btn:hover {
+      color: #fff;
+    }
+    
+    a.btn-gradient:hover:after {
+      opacity: 0;
+    }
+    .box4 {
+        width: 317px;
+        height: 600px;
+        margin-left: auto;
+        color: black;
+        background-color: aliceblue;
+        font-size: 20px;
+        margin: 20px;
+        padding: 5px;
+        display: block;
+        line-height: 30px;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+    }
+    
+    .box4-title h1 {
+        font-family: 'ヒラギノ明朝Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
+        padding: 1rem 1rem;
+        color: black;
+        background: #000;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .box4-title h1 span {
+        background-image: -webkit-linear-gradient(315deg, #b8751e 0%, #ffce08 37%, #fefeb2 47%, #fafad6 50%, #fefeb2 53%, #e1ce08 63%, #b8751e 100%);
+        background-image: linear-gradient(135deg, #b8751e 0%, #ffce08 37%, #fefeb2 47%, #fafad6 50%, #fefeb2 53%, #e1ce08 63%, #b8751e 100%);
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+      }
+    
+    .box4 p {
+        font-size:  23px;
+        font-family: "ヒラギノ明朝 ProN","Hiragino Mincho ProN",Arial,serif; 
+        font-weight: 900;
+    }
+    .box4 h2 {
+        position: relative;
+        top: 60px;
+        font-size: 23px;
+        font-family: "ヒラギノ明朝 ProN","Hiragino Mincho ProN",Arial,serif; 
+        font-weight: 900;
+    }
+    
+    article {
+        display: block;
+    }
+    
+    #page_top{
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        background: #3f98ef;
+        opacity: 0.6;
+        border-radius: 50%;
+    }
+    #page_top a {
+        position: relative;
+        display: block;
+        width: 50px;
+        height: 50px;
+        text-decoration: none;
+    }
+    #page_top a::before{
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        content: '\f102';
+        font-size: 25px;
+        color: #fff;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: -5px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        text-align: center;
+    }
+    
+    
+    
+    
+    #footer {
+        border-top: solid 1px white (100, 78, 78);
+        padding-bottom: 10px;
+        background-color: black;
+    }
+    #footer p {
+          color: white;
+          text-align: center;
+    }
+    
+
